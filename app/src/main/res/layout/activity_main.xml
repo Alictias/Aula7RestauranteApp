@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#7E7E7E"
+    >
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RA: 12428530 - Nome: Alice Minhoto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D9D2D2"
+        android:paddingBottom="24dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/editMesaId"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Digite o ID da mesa"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_green"
+        android:text="🔎 Consultar 🔍"
+        android:textAllCaps="false"
+        android:textColor="#267A05"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAbrir"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_blue"
+        android:text="🍽️ Abrir Mesa 🥢"
+        android:textAllCaps="false"
+        android:textColor="#0048FF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_red"
+        android:text="💸 Fechar Mesa 💸"
+        android:textAllCaps="false"
+        android:textColor="#AB1C1C"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nome do Cliente"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:enabled="true" />
+
+    <EditText
+        android:id="@+id/editProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Produtos (separados por vírgula)"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:enabled="true" />
+
+    <EditText
+        android:id="@+id/editValor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Valor da conta (use ponto)"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/btnAtualizarMesa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_orange"
+        android:enabled="true"
+        android:text="🔁 Atualizar Dados da Mesa 🔁"
+        android:textAllCaps="false"
+        android:textColor="#685800"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+</LinearLayout>
